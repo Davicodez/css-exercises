@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -9,7 +10,7 @@ body {
   margin: 0;
   background: #aaa;
   color: #333;
-  /* I'll give you this one for free lol */
+  /* I'll give you this one for free lol - from odin */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +20,11 @@ body {
   background: white;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
+  /* added this */
+  padding: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 .icon {
@@ -33,6 +38,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* added this */
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -48,6 +55,9 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+
+/* I added this */
+  margin-left: auto;
 }
 
 button {
@@ -60,10 +70,34 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+
 }
 
 button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+
+/* I added this */
+.message {
+  /* display: flex; */
+  /* flex-direction: column; */
+  
+}
+/* I addeded this CSS to make the buttons responsive */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+
+
+}
+
+.text {
+  margin-bottom: 16px;
 }
